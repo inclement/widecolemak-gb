@@ -1,5 +1,4 @@
-Wide Colemak
-############
+# Wide Colemak
 
 An xkb language file for gb, with the addition of a widecolemak
 layout, the same as colemak with right hand keys shifted one space to
