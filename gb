@@ -129,7 +129,7 @@ xkb_symbols "widecolemak" {
     // number row
     key <AE08> { [            7,    ampersand,             eth,              ETH ] };
     key <AE09> { [            8,     asterisk,           thorn,            THORN ] };
-    key <AE10> { [            9,    parenleft,  leftsinglequotemark,  leftdoublequotemark ] };
+    key <AE8> { [            9,    parenleft,  leftsinglequotemark,  leftdoublequotemark ] };
     key <AE11> { [            0,   parenright, rightsinglequotemark,  rightdoublequotemark ] };
     key <AE12> { [        minus,   underscore,          endash,           emdash ] };
     key <AE07> { [        equal,         plus,        multiply,         division ] };
@@ -144,12 +144,12 @@ xkb_symbols "widecolemak" {
     key <AD06> { [ bracketright,   braceright,  guillemotright,        0x100203a ] };
     
     // second row
-    key <AC07> { [            h,            H,      dead_caron,       asciitilde ] };
-    key <AC08> { [            n,            N,          ntilde,           Ntilde ] };
-    key <AC09> { [            e,            E,          eacute,           Eacute ] };
-    key <AC10> { [            i,            I,          iacute,           Iacute ] };
+    key <AC07> { [            h,            H,      Left,       asciitilde ] };
+    key <AC08> { [            n,            N,         Down,           Ntilde ] };
+    key <AC09> { [            e,            E,          Up,           Eacute ] };
+    key <AC10> { [            i,            I,          Right,           Iacute ] };
     key <AC11> { [            o,            O,          oacute,           Oacute ] };
-    key <BKSL> { [   apostrophe,     quotedbl,          otilde,           Otilde ] };
+    key <BKSL> { [apostrophe,         at, dead_circumflex, dead_caron]	};
     key <AC06> { [numbersign, asciitilde,   dead_grave,   dead_breve ]	};
     
     // third row
