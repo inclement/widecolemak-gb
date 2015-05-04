@@ -129,7 +129,7 @@ xkb_symbols "widecolemak" {
     // number row
     key <AE08> { [            7,    ampersand,             eth,              ETH ] };
     key <AE09> { [            8,     asterisk,           thorn,            THORN ] };
-    key <AE8> { [            9,    parenleft,  leftsinglequotemark,  leftdoublequotemark ] };
+    key <AE10> { [            9,    parenleft,  leftsinglequotemark,  leftdoublequotemark ] };
     key <AE11> { [            0,   parenright, rightsinglequotemark,  rightdoublequotemark ] };
     key <AE12> { [        minus,   underscore,          endash,           emdash ] };
     key <AE07> { [        equal,         plus,        multiply,         division ] };
