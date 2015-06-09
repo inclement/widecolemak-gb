@@ -127,6 +127,8 @@ xkb_symbols "widecolemak" {
     name[Group1] = "English (Wide Colemak)";
     
     // number row
+    key <AE03>   { [ 3, bracketleft, braceleft, sterling ] };
+    key <AE04>   { [ 4, bracketright, braceright, onequarter ] };
 //    key <AE08> { [            7,    ampersand,             eth,              ETH ] };
 //    key <AE09> { [            8,     asterisk,           thorn,            THORN ] };
 //    key <AE10> { [            9,    parenleft,  leftsinglequotemark,  leftdoublequotemark ] };
@@ -141,7 +143,7 @@ xkb_symbols "widecolemak" {
     key <AD10> { [            y,            Y,      udiaeresis,       Udiaeresis ] };
     key <AD11> { [    semicolon,        colon,      bracketleft,      braceleft] };
     key <AD12> { [  bracketleft,    braceleft,   bracketright,        braceright ] };
-    key <AD06> { [ bracketright,   braceright,  guillemotright,        0x100203a ] };
+    key <AD06> { [ dollar,   sterling,  guillemotright,        0x100203a ] };
     
     // second row
     key <AC07> { [            h,            H,      Left,       asciitilde ] };
