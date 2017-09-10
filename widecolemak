@@ -1,0 +1,65 @@
+// based on a keyboard map from an 'xkb/symbols/gb' file
+
+partial alphanumeric_keys
+xkb_symbols "colemak" {
+    include "us(colemak)"
+
+    name[Group1]="English (UK, Colemak)";
+
+    key <AE02>	{ [         2,   quotedbl,  twosuperior,    oneeighth ]	};
+    key <AE03>	{ [         3,   sterling, threesuperior,    sterling ]	};
+    key <AE04>	{ [         4,     dollar,     EuroSign,   onequarter ]	};
+
+    key <AC11>	{ [apostrophe,         at, dead_circumflex, dead_caron]	};
+    key <TLDE>	{ [     grave,    notsign,          bar,          bar ]	};
+
+    key <BKSL>	{ [numbersign, asciitilde,   dead_grave,   dead_breve ]	};
+    key <LSGT>	{ [ backslash,        bar,          bar,    brokenbar ]	};
+
+    include "level3(ralt_switch_multikey)"
+};
+    
+default partial alphanumeric_keys
+xkb_symbols "widecolemak" {
+    include "gb(colemak)" 
+    name[Group1] = "English (Wide Colemak)";
+    
+    // number row
+    key <AE03>   { [ 3, bracketleft, braceleft, sterling ] };
+    key <AE04>   { [ 4, bracketright, braceright, onequarter ] };
+//    key <AE08> { [            7,    ampersand,             eth,              ETH ] };
+//    key <AE09> { [            8,     asterisk,           thorn,            THORN ] };
+//    key <AE10> { [            9,    parenleft,  leftsinglequotemark,  leftdoublequotemark ] };
+//    key <AE11> { [            0,   parenright, equal,  plus ] };
+//    key <AE12> { [        minus,   underscore,          endash,           emdash ] };
+//    key <AE07> { [        equal,         plus,        multiply,         division ] };
+    
+    // first row
+    key <AD07> { [            j,            J,         dstroke,          Dstroke ] };
+    key <AD08> { [            l,            L,         lstroke,          Lstroke ] };
+    key <AD09> { [            u,            U,          uacute,           Uacute ] };
+    key <AD10> { [            y,            Y,      udiaeresis,       Udiaeresis ] };
+    key <AD11> { [    semicolon,        colon,      bracketleft,      braceleft] };
+    key <AD12> { [  bracketleft,    braceleft,   bracketright,        braceright ] };
+    key <AD06> { [ dollar,   sterling,  guillemotright,        0x100203a ] };
+    
+    // second row
+    key <AC07> { [            h,            H,      Left,       asciitilde ] };
+    key <AC08> { [            n,            N,         Down,           Ntilde ] };
+    key <AC09> { [            e,            E,          Up,           Eacute ] };
+    key <AC10> { [            i,            I,          Right,           Iacute ] };
+    key <AC11> { [            o,            O,          oacute,           Oacute ] };
+    key <BKSL> { [apostrophe,         at, dead_circumflex, dead_caron]	};
+    key <AC06> { [numbersign, asciitilde,   dead_grave,   dead_breve ]	};
+    
+    // third row
+    key <AB07> { [            k,            K,  dead_abovering,       asciitilde ] };
+    key <AB08> { [            m,            M,     dead_macron,       asciitilde ] };
+    key <AB09> { [        comma,         less,    dead_cedilla,       asciitilde ] };
+    key <AB10> { [       period,      greater,   slash,       asciitilde ] };
+    key <AB06> { [        slash,     question,    questiondown,       asciitilde ] };
+
+    include "level3(ralt_switch_multikey)"
+};
+
+
