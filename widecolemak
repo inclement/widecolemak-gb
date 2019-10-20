@@ -18,12 +18,12 @@ xkb_symbols "colemak" {
 
     include "level3(ralt_switch_multikey)"
 };
-    
+
 default partial alphanumeric_keys
 xkb_symbols "widecolemak" {
-    include "gb(colemak)" 
+    include "gb(colemak)"
     name[Group1] = "English (Wide Colemak)";
-    
+
     // number row
     key <AE03>   { [ 3, bracketleft, braceleft, sterling ] };
     key <AE04>   { [ 4, bracketright, braceright, onequarter ] };
@@ -33,25 +33,25 @@ xkb_symbols "widecolemak" {
 //    key <AE11> { [            0,   parenright, equal,  plus ] };
 //    key <AE12> { [        minus,   underscore,          endash,           emdash ] };
 //    key <AE07> { [        equal,         plus,        multiply,         division ] };
-    
+
     // first row
     key <AD07> { [            j,            J,         dstroke,          Dstroke ] };
     key <AD08> { [            l,            L,         lstroke,          Lstroke ] };
-    key <AD09> { [            u,            U,          uacute,           Uacute ] };
+    key <AD09> { [            u,            U,          apostrophe,           Uacute ] };
     key <AD10> { [            y,            Y,      udiaeresis,       Udiaeresis ] };
     key <AD11> { [    semicolon,        colon,      bracketleft,      braceleft] };
-    key <AD12> { [  bracketleft,    braceleft,   bracketright,        braceright ] };
+    key <AD12> { [  apostrophe,    at,   bracketright,        braceright ] };
     key <AD06> { [ dollar,   sterling,  guillemotright,        0x100203a ] };
-    
+
     // second row
     key <AC07> { [            h,            H,      Left,       asciitilde ] };
     key <AC08> { [            n,            N,         Down,           Ntilde ] };
     key <AC09> { [            e,            E,          Up,           Eacute ] };
     key <AC10> { [            i,            I,          Right,           Iacute ] };
     key <AC11> { [            o,            O,          oacute,           Oacute ] };
-    key <BKSL> { [apostrophe,         at, dead_circumflex, dead_caron]	};
+    key <BKSL> { [Return,         at, dead_circumflex, dead_caron]	};
     key <AC06> { [numbersign, asciitilde,   dead_grave,   dead_breve ]	};
-    
+
     // third row
     key <AB07> { [            k,            K,  dead_abovering,       asciitilde ] };
     key <AB08> { [            m,            M,     dead_macron,       asciitilde ] };
@@ -61,5 +61,3 @@ xkb_symbols "widecolemak" {
 
     include "level3(ralt_switch_multikey)"
 };
-
-
